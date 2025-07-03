@@ -1,5 +1,9 @@
 # Sudoku and Propositional Logic
 
+## Running the Code
+
+To run this code, simply run solve_sudoku.py. You can change between the differnt cnf files just by changing the string in puzzle_name. You can change walk_sat to gsat if desired. Also uncomment simulated_annealing line if wanting to test that. I recommend running simulated_annealing and gsat on "rows.cnf" and running walk_sat on "puzzle1.cnf". Finally, to test the map coloring problem, just run MapColoringSAT.py.
+
 ## Introduction
 
 This project outlines an import aspect of artificial intelligence known as propositional logic. Mathematics plays an important role in this form of logic by having many laws for how terms such as "and", "or", "not", etc. interact with each other in a clause. In order to represent a sudoku, we examine .cnf files, standing for conjunctive normal form. For these problems, each clause is simplified down to just a chain of "or" statements connecting several variables that should either be true or false. Using two generalized algorthims known as GSAT and WalkSAT, we can take a random boolean assignment for every variable and eventually reach a goal where every clause is true. GSAT will be able to solve only a few of these puzzles, but WalkSAT can solve them all with enough time. Once I have shown how WalkSAT can solve these sudokus, I will also demonstrate it on the 4-coloring map problem on the map of the United States.
